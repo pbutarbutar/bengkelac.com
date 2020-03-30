@@ -74,10 +74,10 @@ func main() {
 	tplmanager.LoadTemplates()
 
 	server := http.Server{
-		Addr: "127.0.0.1:8080",
+		Addr: "127.0.0.1:8081",
 	}
 
-	fmt.Println("Running port 8080")
+	fmt.Println("Running port 8081")
 	http.HandleFunc("/", index)
 	http.HandleFunc("/aboutme", aboutMe)
 	http.HandleFunc("/skillset", skillSet)
