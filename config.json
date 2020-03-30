@@ -1,0 +1,5 @@
+{
+    "LayoutPath": "views/layouts/",
+    "IncludePath": "views/",
+    "Port": 8080
+}
