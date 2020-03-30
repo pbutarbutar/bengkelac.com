@@ -8,6 +8,7 @@ import (
 
 	"bengkelac.com/libs"
 	"bengkelac.com/libs/tplmanager"
+	_ "github.com/qodrorid/godaemon"
 )
 
 type UserData struct {
