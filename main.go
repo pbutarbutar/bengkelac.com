@@ -33,10 +33,10 @@ func loadConfiguration(fileName string) {
 
 func index(w http.ResponseWriter, r *http.Request) {
 
-	if r.URL.Path != "/" {
+	/*if r.URL.Path != "/" {
 		http.NotFound(w, r)
 		return
-	}
+	}*/
 
 	err := tplmanager.RenderTemplate(w, "index.tmpl", nil)
 	if err != nil {
