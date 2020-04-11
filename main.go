@@ -11,6 +11,9 @@ import (
 	_ "github.com/qodrorid/godaemon"
 )
 
+type IndexPage struct {
+	Title string
+}
 type UserData struct {
 	Name        string
 	City        string
@@ -38,7 +41,9 @@ func index(w http.ResponseWriter, r *http.Request) {
 		return
 	}*/
 
-	err := tplmanager.RenderTemplate(w, "index.tmpl", nil)
+	titleHome := &IndexPage{Title: "Service AC/KULKAS/MESIN CUCI DAERAH CIPUTATA, SAWANGAN, PONDOK CABE, PAMULANG, PONDOK INDAH"}
+
+	err := tplmanager.RenderTemplate(w, "index.tmpl", titleHome)
 	if err != nil {
 		log.Println(err)
 	}
